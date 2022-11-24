@@ -1,0 +1,56 @@
+public class Main {
+	public static void main(String [] args){
+		Motors motors;
+		Motoposh motoposh 
+= new Motoposh("Aventador.", 1, "V150-powered");
+		XRM xrm
+= new XRM("298 GTB.", 1, "V8 engine");
+		
+		motors = motoposh;
+		System.out.println(motors.makesound() + " " + "My name is " + motors.getName());
+		
+		motors = XRM;
+		System.out.println(motors.makesound() + " " + "My name is " + motors.getName());
+	}
+}
+
+
+
+
+
+
+
+public abstract class Motors{
+	protected String name;
+	protected double weight;
+	
+	public Motors (String name, double weight){
+		this.name = name;
+		this.weight = weight;
+	}
+	
+	public abstract String makesound();
+	
+	public String getName(){
+		return name;
+	}
+	
+	public void setName (String name){
+		this.name = name;
+	}
+	
+	public double getWeight(){
+		return weight;
+	}
+	
+	public void setWeight(double weight){
+		this.weight = weight;
+	}
+}
+
+
+
+
+
+
+
